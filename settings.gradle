@@ -1,0 +1,2 @@
+include ':app', ':cgl_lib'
+rootProject.name='es3_effects'

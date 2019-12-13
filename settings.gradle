@@ -1,2 +1,2 @@
-include ':app', ':cgl_lib'
+include ':app', ':cgl_lib', ':c_bullet'
 rootProject.name='es3_effects'

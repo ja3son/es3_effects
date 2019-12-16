@@ -4,7 +4,6 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion compile_version
 
-
     defaultConfig {
         minSdkVersion min_version
         targetSdkVersion target_version
@@ -13,6 +12,10 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
+        externalNativeBuild {
+            cmake {
+            }
+        }
     }
 
     buildTypes {
@@ -22,6 +25,11 @@ android {
         }
     }
 
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
 }
 
 dependencies {
